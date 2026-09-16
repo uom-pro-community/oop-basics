@@ -75,3 +75,50 @@ classDiagram
 
 Code: [03_shopping_cart.py](03_shopping_cart.py)
 
+
+## Food Ordering
+
+```mermaid
+classDiagram
+    class MenuItem {
+        +name
+        +price
+    }
+    class Restaurant {
+        +name
+        -menu
+        +add_item(item)
+        +show_menu()
+    }
+    class FoodOrder {
+        +customer
+        -items
+        +add_item(item_name)
+        +total()
+        +place_order()
+    }
+    Restaurant "1" o-- "many" MenuItem : offers
+    FoodOrder --> Restaurant : orders from
+    FoodOrder "1" o-- "many" MenuItem : contains
+```
+
+Code: [04_food_order.py](04_food_order.py)
+
+## Vehicle Rental
+
+```mermaid
+classDiagram
+    class Vehicle {
+        +model
+        +daily_rate
+        +is_available
+        +rent(days)
+        +return_vehicle()
+    }
+    class Car
+    class Motorcycle
+    Vehicle <|-- Car : inherits
+    Vehicle <|-- Motorcycle : inherits
+```
+
+Code: [05_vehicle_rental.py](05_vehicle_rental.py)
