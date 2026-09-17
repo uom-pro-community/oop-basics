@@ -9,3 +9,15 @@ class Student:
 
 student = Student("Alex", 20)
 student.introduce()
+
+
+class Teacher:
+    def __init__(self, name,age):
+        self.name = name
+        self.age = age
+
+    def secondfunc(self):
+        print(f"My name is {self.name}. I am {self.age} years old.")
+
+teacher = Teacher("John", 35)
+teacher.secondfunc()
