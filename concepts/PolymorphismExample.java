@@ -1,22 +1,24 @@
-class DogForPolymorphism {
+interface AnimalForPolymorphism {
+    void speak();
+}
+
+class DogForPolymorphism implements AnimalForPolymorphism {
+    @Override
     public void speak() {
         System.out.println("Woof");
     }
 }
 
-class CatForPolymorphism {
+class CatForPolymorphism implements AnimalForPolymorphism {
+    @Override
     public void speak() {
         System.out.println("Meow");
     }
 }
 
 public class PolymorphismExample {
-    public static void makeAnimalSpeak(Object animal) {
-        if (animal instanceof DogForPolymorphism) {
-            ((DogForPolymorphism) animal).speak();
-        } else if (animal instanceof CatForPolymorphism) {
-            ((CatForPolymorphism) animal).speak();
-        }
+    public static void makeAnimalSpeak(AnimalForPolymorphism animal) {
+        animal.speak();
     }
 
     public static void main(String[] args) {
