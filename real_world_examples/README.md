@@ -34,7 +34,7 @@ flowchart TD
     E --> F[Update account balance]
 ```
 
-Code: [01_atm_machine.py](01_atm_machine.py)
+Code: [01_atm_machine.py](01_atm_machine.py) | [AtmMachineExample.java](AtmMachineExample.java)
 
 ## Library System
 
@@ -54,7 +54,7 @@ classDiagram
     Library "1" o-- "many" Book : contains
 ```
 
-Code: [02_library_system.py](02_library_system.py)
+Code: [02_library_system.py](02_library_system.py) | [LibrarySystemExample.java](LibrarySystemExample.java)
 
 ## Shopping Cart
 
@@ -73,7 +73,7 @@ classDiagram
     ShoppingCart "1" o-- "many" Product : contains
 ```
 
-Code: [03_shopping_cart.py](03_shopping_cart.py)
+Code: [03_shopping_cart.py](03_shopping_cart.py) | [ShoppingCartExample.java](ShoppingCartExample.java)
 
 
 ## Food Ordering
@@ -102,7 +102,7 @@ classDiagram
     FoodOrder "1" o-- "many" MenuItem : contains
 ```
 
-Code: [04_food_order.py](04_food_order.py)
+Code: [04_food_order.py](04_food_order.py) | [FoodOrderExample.java](FoodOrderExample.java)
 
 ## Vehicle Rental
 
@@ -121,5 +121,5 @@ classDiagram
     Vehicle <|-- Motorcycle : inherits
 ```
 
-Code: [05_vehicle_rental.py](05_vehicle_rental.py)
+Code: [05_vehicle_rental.py](05_vehicle_rental.py) | [VehicleRentalExample.java](VehicleRentalExample.java)
 
